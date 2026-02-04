@@ -1,0 +1,77 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Page background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f2933, #111827);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+/* Main card */
+.container {
+  background: #ffffff;
+  color: #111827;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 35px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+/* Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #232f3e;
+  /* Amazon dark blue */
+}
+/* Form elements */
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  resize: none;
+  font-size: 14px;
+}
+/* File input */
+input[type="file"] {
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff9900;
+  /* Amazon orange */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #e68a00;
+}
+/* Score box */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  background: #e0f2fe;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #0c4a6e;
+  font-weight: bold;
+}
