@@ -14,7 +14,6 @@ body {
   align-items: center;
   color: #ffffff;
 }
-
 /* Main card */
 .container {
   background: #ffffff;
@@ -25,7 +24,6 @@ body {
   border-radius: 14px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
-
 /* Heading */
 .container h1 {
   text-align: center;
@@ -33,7 +31,6 @@ body {
   color: #232f3e;
   /* Amazon dark blue */
 }
-
 /* Form elements */
 textarea {
   width: 100%;
@@ -45,13 +42,11 @@ textarea {
   resize: none;
   font-size: 14px;
 }
-
 /* File input */
 input[type="file"] {
   width: 100%;
   margin-bottom: 20px;
 }
-
 /* Button */
 button {
   width: 100%;
@@ -66,11 +61,9 @@ button {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 button:hover {
   background: #e68a00;
 }
-
 /* Score box */
 .result {
   margin-top: 20px;

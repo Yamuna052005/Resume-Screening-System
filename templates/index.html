@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Resume Screening System</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
-
   <div class="container">
     <h1>Resume Screening</h1>
-
     <form method="post" enctype="multipart/form-data">
       <textarea name="jd" placeholder="Enter Job Description"></textarea>
-
       <input type="file" name="resume" required>
-
       <button type="submit">Check Match</button>
     </form>
-
     {% if score is not none %}
     <div class="result">
       Match Score: {{ score }}%
     </div>
     {% endif %}
   </div>
-
 </body>
-
 </html>
