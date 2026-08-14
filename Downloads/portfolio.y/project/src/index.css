@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-navy-950 text-white font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #93b4e8 50%, #5a76b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #f5c842 0%, #e8b423 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass {
+    background: rgba(30, 58, 138, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(93, 118, 180, 0.2);
+  }
+
+  .glass-dark {
+    background: rgba(9, 20, 54, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(93, 118, 180, 0.15);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+    hover-shadow-color: rgba(93, 118, 180, 0.3);
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      rgba(93, 118, 180, 0.05) 25%,
+      rgba(93, 118, 180, 0.15) 50%,
+      rgba(93, 118, 180, 0.05) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(93,118,180,0.5), transparent);
+  }
+
+  .opacity-hidden {
+    opacity: 0;
+  }
+
+  .animate-in {
+    animation-fill-mode: both;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #050b1f; }
+::-webkit-scrollbar-thumb { background: #1e3a8a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3c5ba6; }
+
+/* Selection */
+::selection { background: rgba(93, 118, 180, 0.4); color: #fff; }
